@@ -53,7 +53,7 @@ And follow it with a request like:
 - "Please continue this thread"
 - "Summarize this macro"
 - "Extract key points from this"  
- [exsample: AGI and Existential Risks](./examples/AGI_discussion.md)  
+ [example: AGI and Existential Risks](./examples/AGI_discussion.md)  
 
 Even if the conversation thread has ended, you can restart it by pasting a saved Denbun Macro in a new session.
 
