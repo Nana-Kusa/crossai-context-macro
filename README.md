@@ -19,7 +19,7 @@ This project aims to enable shared context and continuity across multiple AI sys
 
 ## How to Use with ChatGPT
 Copy and paste the following format into your ChatGPT prompt:
-
+~~~
 Please continue the discussion based on the following Denbun Macro:
 
 #Denbun_Label:{
@@ -28,7 +28,7 @@ SectionName:{
   Topic2=Content;
 };
 }
-
+~~~
 ## Future Goal: Cross-AI Compatibility
 We aim to make this format usable across various AI platforms.  
 By placing Denbun Macros at the beginning of prompts, we hope to achieve consistent context reproduction and smoother dialogue continuity in systems like Gemini and Claude.
