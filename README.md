@@ -1,4 +1,7 @@
-# crossai-context-macro
+# crossai-context-macro  
+
+Japanese version available: [README.ja.md](./README.ja.md)
+
 
 ## Overview
 **crossai-context-macro** is a structured discussion-log format called *Denbun Macro*, designed to be readable by both humans and AI.  
