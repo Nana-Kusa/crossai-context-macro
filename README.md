@@ -26,10 +26,10 @@ Copy and paste the following format into your ChatGPT prompt:
 Please continue the discussion based on the following Denbun Macro:
 
 #Denbun_Label:{
-SectionName:{
-  Topic1=Content;
-  Topic2=Content;
-};
+  SectionName:{
+    Topic1=Content;
+    Topic2=Content;
+  };
 }
 ~~~
 
@@ -41,10 +41,10 @@ Just paste a macro like this at the beginning or end of your prompt:
 
 ~~~
 #Denbun_Label:{
-SectionName:{
-  Topic1=Content;
-  Topic2=Content;
-};
+  SectionName:{
+    Topic1=Content;
+    Topic2=Content;
+  };
 }
 ~~~
 
@@ -52,7 +52,8 @@ And follow it with a request like:
 
 - "Please continue this thread"
 - "Summarize this macro"
-- "Extract key points from this"
+- "Extract key points from this"  
+ [exsample: AGI and Existential Risks](./exsamples/AGI_discussion.md)
 
 Even if the conversation thread has ended, you can restart it by pasting a saved Denbun Macro in a new session.
 
