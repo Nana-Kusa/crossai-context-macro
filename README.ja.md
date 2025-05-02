@@ -56,7 +56,7 @@ ChatGPT、Gemini、Claude など複数のAI間で文脈や履歴を共有し、�
 などの形でプロンプトを追加してください。  
 [例１ AGIの議論の伝文マクロ](./examples/AGI_discussion.ja.md)  
 [例２ CANインベーダー攻撃防御の議論の伝文マクロ](./examples/canbus_security.ja.md)  
-[例３ ファクトチェックの伝文マクロ](./examples/factcheck_example.ja.md)  
+[例３ ChatGPT, Gemini, Claudeの回答差異を検証する伝文マクロ](./examples/factcheck_example.ja.md)  
 
 スレッドが途切れても、マクロさえ保存しておけば新しい会話で再現が可能です。
 
