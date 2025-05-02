@@ -35,4 +35,18 @@ By placing Denbun Macros at the beginning of prompts, we hope to achieve consist
 
 ## Contribution & License
 This project is open for use, modification, and redistribution.  
-License: MIT License
+License: MIT License  
+
+## What is Denbun Macro?  
+📝 Denbun Macro (伝文マクロ) is a Japanese term that roughly means "structured thread summary".
+It refers to a human-readable and AI-interpretable format designed to preserve conversation context across AI systems.
+
+If you're an English speaker, you may think of it as a **Structured Context Macro**.  
+
+Denbun macros are typically written in Markdown-like syntax,  
+but can also be represented in JSON or YAML for structured use across tools.
+
+
+
+
+
