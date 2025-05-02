@@ -1,0 +1,38 @@
+# crossai-context-macro
+
+## Overview
+**crossai-context-macro** is a structured discussion-log format called *Denbun Macro*, designed to be readable by both humans and AI.  
+This project aims to enable shared context and continuity across multiple AI systems such as ChatGPT, Gemini, and Claude.
+
+## Purpose
+- Share and reuse discussion context across different AI platforms
+- Facilitate fact-checking and multi-perspective comparison
+- Evaluate and enhance the contextual understanding capabilities of large language models (LLMs)
+- Acts as a manual backup in case a conversation thread is interrupted
+- Users can maintain versioned backups and roll back to any previous point in the discussion
+- Enables context transfer between different ChatGPT threads or even across ChatGPT versions
+
+## Directory Structure
+- `format_spec/` : Format templates in Markdown, JSON, and YAML
+- `examples/` : Real-world examples of Denbun Macros used in AI conversations
+- `LICENSE` : License information (MIT)
+
+## How to Use with ChatGPT
+Copy and paste the following format into your ChatGPT prompt:
+
+Please continue the discussion based on the following Denbun Macro:
+
+#Denbun_Label:{
+SectionName:{
+  Topic1=Content;
+  Topic2=Content;
+};
+}
+
+## Future Goal: Cross-AI Compatibility
+We aim to make this format usable across various AI platforms.  
+By placing Denbun Macros at the beginning of prompts, we hope to achieve consistent context reproduction and smoother dialogue continuity in systems like Gemini and Claude.
+
+## Contribution & License
+This project is open for use, modification, and redistribution.  
+License: MIT License
