@@ -32,6 +32,32 @@ SectionName:{
 };
 }
 ~~~
+
+## Can Anyone Use Denbun Macro?
+
+Yes! Anyone using ChatGPT (especially GPT-4 or GPT-4 Turbo) can use the Denbun Macro format in their prompts.
+
+Just paste a macro like this at the beginning or end of your prompt:
+
+~~~
+#Denbun_Label:{
+SectionName:{
+  Topic1=Content;
+  Topic2=Content;
+};
+}
+~~~
+
+And follow it with a request like:
+
+- "Please continue this thread"
+- "Summarize this macro"
+- "Extract key points from this"
+
+Even if the conversation thread has ended, you can restart it by pasting a saved Denbun Macro in a new session.
+
+Note: GPT-3.5 may not understand complex macros well. GPT-4 is recommended.
+
 ## Future Goal: Cross-AI Compatibility
 We aim to make this format usable across various AI platforms.  
 By placing Denbun Macros at the beginning of prompts, we hope to achieve consistent context reproduction and smoother dialogue continuity in systems like Gemini and Claude.
