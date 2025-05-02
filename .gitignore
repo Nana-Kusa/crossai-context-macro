@@ -1,0 +1,15 @@
+# Ignore typical OS and editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore user backups
+*.old
+*.backup
+
+# Ignore node/npm or Python cache if added later
+node_modules/
+__pycache__/
