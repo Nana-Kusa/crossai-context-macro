@@ -1,4 +1,7 @@
-# crossai-context-macro
+# crossai-context-macro  
+
+English version available: [README.md](./README.md)
+  
 
 ## 概要
 **crossai-context-macro** は、人間とAIの両方が読解可能な構造で議論履歴を記録する「伝文マクロ」形式です。  
