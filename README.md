@@ -93,6 +93,20 @@ You can make:
 
 ---
 
+## 🚀 Cross-AI Compatibility Confirmed
+
+As of May 2025, we have confirmed that **Gemini 2.5 Flash** is able to interpret and utilize Denbun Macros correctly. It successfully:
+
+- Parsed the macro’s hierarchical structure
+- Produced a human-readable summary
+- Generated a six-step roadmap for ongoing discussion
+
+✅ This validation was conducted using the macro in [examples/AGI_discussion.ja.md](./examples/AGI_discussion.ja.md).
+
+🔗 The full conversation with Gemini is available here:  
+[https://g.co/gemini/share/ce95067b8c52](https://g.co/gemini/share/ce95067b8c52)
+
+---
 ## 📖 Glossary
 
 | Term | Meaning |
