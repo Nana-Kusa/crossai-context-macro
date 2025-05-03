@@ -91,18 +91,21 @@ ChatGPT、Gemini、Claude など複数のAI間で文脈や履歴を共有し、�
 
 ## 🚀 クロスAI対応の進展
 
-2025年5月時点で、**Gemini 2.5 Flash** が伝文マクロを正しく解釈し、活用できることが確認されました。具体的には：
+2025年5月時点で、**Gemini 2.5 Flash** が伝文マクロを正しく解釈し、活用できることが確認されました。実際に以下のことが可能でした：
 
-- マクロ構造の正確な解析
-- 内容の人間向け要約
-- 論点に基づいたステップバイステップの議論ロードマップの提示
+- 伝文マクロの構造を正確に解析
+- 内容を人間向けに要約
+- 論点に沿ったステップバイステップのロードマップを提示
 
-これにより、「CrossAI」の構想が現実的に機能し始めたことが実証されました。
+使用した伝文マクロは以下のものでした：  
+📄 [examples/AGI_discussion.ja.md](./examples/AGI_discussion.ja.md)
 
-> Geminiは「AGIの存在リスク」に関する伝文マクロを理解し、6ステップにわたる議論のロードマップを提示しました。
+Geminiによる実際の出力はこちらで確認できます：  
+🌐 [Gemini 2.5 Flash の出力結果（共有リンク）](https://g.co/gemini/share/ce95067b8c52)
 
-使用した伝文マクロ[examples/AGI_discussion.ja.md](./examples/AGI_discussion.ja.md)  
-Gemini2.5Flashとの会話全文 [https://g.co/gemini/share/ce95067b8c52](https://g.co/gemini/share/ce95067b8c52)  
+この結果により、**CrossAI**構想が現実に機能することが実証されました。
+
+
 
 ## 貢献とライセンス
 このプロジェクトは自由に使用・改変・再配布できます。  
