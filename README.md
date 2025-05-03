@@ -4,79 +4,102 @@ Japanese version available: [README.ja.md](./README.ja.md)
 
 
 ## Overview
-**crossai-context-macro** is a structured discussion-log format called *Denbun Macro*, designed to be readable by both humans and AI.  
-This project aims to enable shared context and continuity across multiple AI systems such as ChatGPT, Gemini, and Claude.
+`crossai-context-macro` is an open-source format and methodology for managing structured conversation memory across multiple AI systems.
 
-## Purpose
-- Share and reuse discussion context across different AI platforms
-- Facilitate fact-checking and multi-perspective comparison
-- Evaluate and enhance the contextual understanding capabilities of large language models (LLMs)
-- Acts as a manual backup in case a conversation thread is interrupted
-- Users can maintain versioned backups and roll back to any previous point in the discussion
-- Enables context transfer between different ChatGPT threads or even across ChatGPT versions
+It uses a concept called a **Denbun Macro**, a human-readable, AI-interpretable block of structured text that summarizes a thread and enables:
+- Context preservation across sessions and platforms
+- Fact-checking across multiple AIs
+- Restarting stopped threads using backups
+- Thread branching, nesting, and resuming discussions at any point
 
-## Directory Structure
-- `format_spec/` : Format templates in Markdown, JSON, and YAML
-- `examples/` : Real-world examples of Denbun Macros used in AI conversations
-- `LICENSE` : License information (MIT)
+---
 
-## How to Use with ChatGPT
-Copy and paste the following format into your ChatGPT prompt:
-~~~
-Please continue the discussion based on the following Denbun Macro:
+## 🧠 Purpose
 
-#Denbun_Label:{
-  SectionName:{
-    Topic1=Content;
-    Topic2=Content;
-  };
-}
-~~~
+Many AI models (e.g., Gemini, Claude, Perplexity) do not retain memory. Even in ChatGPT, conversations are bound to single threads unless memory is explicitly referenced. Denbun Macro solves this by making the context **portable**.
 
-## Can Anyone Use Denbun Macro?
+---
 
-Yes! Anyone using ChatGPT (especially GPT-4 or GPT-4 Turbo) can use the Denbun Macro format in their prompts.
+## ✅ Benefits
 
-Just paste a macro like this at the beginning or end of your prompt:
+- Structure thread content explicitly
+- Switch between AI platforms while preserving context
+- Perform fact-checking by comparing macro interpretations
+- Rewind discussions from previous points if they go off-track
+
+---
+
+## 🧰 How to Use with ChatGPT
+
+Paste a macro like this into your prompt:
 
 ~~~
 #Denbun_Label:{
-  SectionName:{
-    Topic1=Content;
-    Topic2=Content;
-  };
+Section:{
+  Topic1=Summary;
+  Topic2=Details;
+};
 }
 ~~~
 
-And follow it with a request like:
+And follow it with:
 
 - "Please continue this thread"
-- "Summarize this macro"
-- "Extract key points from this"  
- [example: AGI and Existential Risks](./examples/AGI_discussion.md)  
+- "Summarize the macro"
+- "Analyze and expand on each section"
 
-Even if the conversation thread has ended, you can restart it by pasting a saved Denbun Macro in a new session.
+---
 
-Note: GPT-3.5 may not understand complex macros well. GPT-4 is recommended.
+## 🌱 Can Anyone Use Denbun Macro?
 
-## Future Goal: Cross-AI Compatibility
-We aim to make this format usable across various AI platforms.  
-By placing Denbun Macros at the beginning of prompts, we hope to achieve consistent context reproduction and smoother dialogue continuity in systems like Gemini and Claude.
+Yes. Anyone using ChatGPT (especially GPT-4) can use Denbun Macro formatting.
 
-## Contribution & License
-This project is open for use, modification, and redistribution.  
-License: MIT License  
+Even if a thread ends or resets, pasting the saved macro will restore it.
 
-## What is Denbun Macro?  
-📝 Denbun Macro (伝文マクロ) is a Japanese term that roughly means "structured thread summary".
-It refers to a human-readable and AI-interpretable format designed to preserve conversation context across AI systems.
+Note: GPT-3.5 may struggle with complex structures. GPT-4 is recommended.
 
-If you're an English speaker, you may think of it as a **Structured Context Macro**.  
+---
 
-Denbun macros are typically written in Markdown-like syntax,  
-but can also be represented in JSON or YAML for structured use across tools.
+## 🧬 Thread Tree Structure
 
+You can build parent-child thread structures easily using Denbun Macros.
 
+1. Keep the main topic in the parent thread.
+2. Save a Denbun Macro in the parent thread when you want to branch out.
+3. Start a new thread with the macro — this becomes the child thread.
+4. When the child finishes, create a macro summarizing it and paste it back into the parent.
 
+You can make:
+- Multiple child threads
+- Grandchild threads
+- Great-grandchild threads, and more
 
+---
 
+## 📂 Example
+
+- [Example: AGI and Existential Risks](./examples/AGI_discussion.md)
+
+---
+
+## 📖 Glossary
+
+| Term | Meaning |
+|------|---------|
+| Denbun | Short for "Denbun Macro", a structured context memory format |
+| Macro | A reusable block of instruction or context |
+| CrossAI | Using multiple AIs in one workflow |
+
+---
+
+## 🔓 License
+
+MIT License (See LICENSE file)
+
+---
+
+## 🤝 Contribution
+
+Issues and PRs welcome! See:
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Contributing Guide](./CONTRIBUTING.md)
