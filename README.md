@@ -52,8 +52,19 @@ And follow it with:
 
 ## 🌱 Can Anyone Use Denbun Macro?
 
-Yes. Anyone using ChatGPT (especially GPT-4) can use Denbun Macro formatting.
+Yes. Anyone using ChatGPT (especially GPT-4) can use Denbun Macro formatting.  
 
+When you want to save a ChatGPT conversation using Denbun Macro for the first time, use the following prompt:  
+~~~
+We define the following data structure as "Denbun Macro." Using this Denbun Macro, please summarize the content of this thread in the Denbun Macro format.
+
+#Denbun_Label:{
+  Section:{
+    Topic1=Summary;
+    Topic2=Details;
+  };
+}
+~~~  
 Even if a thread ends or resets, pasting the saved macro will restore it.
 
 Note: GPT-3.5 may struggle with complex structures. GPT-4 is recommended.
