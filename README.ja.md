@@ -59,6 +59,7 @@ ChatGPT、Gemini、Claude など複数のAI間で文脈や履歴を共有し、�
 - 「この構造で別の話題を整理して」
 
 などの形でプロンプトを追加してください。  
+伝文マクロを定義してしまえば、「このスレッドを伝文マクロ形式で記録」とバックアップを作ることができます。  
 [例１ AGIの議論の伝文マクロ](./examples/AGI_discussion.ja.md)  
 [例２ CANインベーダー攻撃防御の議論の伝文マクロ](./examples/canbus_security.ja.md)  
 [例３ ChatGPT, Gemini, Claudeの回答差異を検証する伝文マクロ](./examples/factcheck_example.ja.md)  
