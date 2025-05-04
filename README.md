@@ -49,6 +49,9 @@ And follow it with:
 - "Analyze and expand on each section"
 
 ### ⚠️ Notes for Using with Different AIs
+📘 For detailed usage instructions with ChatGPT and Gemini, see  
+→ [docs/usage.md](./docs/usage.md)
+
 
 - **ChatGPT** (GPT-4):
   - Paste the macro at the start of the thread or into memory.
