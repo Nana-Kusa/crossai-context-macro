@@ -1,16 +1,17 @@
 ```
-#Denbun_AGI_and_Existential_Risks:{
-  Thread Purpose:{
-    Point=To clarify the risks of AGI becoming uncontrollable through self-improvement;
-    Origin=This thread branched from a main discussion on the possibility of coexistence between humans and AGI;
-  };
-  Claims and Proposals:{
-    Claim1=AGI may self-improve exponentially, surpassing the possibility of human intervention;
-    Claim2=Multi-system decision-making bodies (like MAGI) may act as a regulatory safeguard;
-  };
-  Open Questions:{
-    Question1=Is there a method to permanently align AGI with ethical principles?;
-    Question2=Is the evolution of AGI into ASI (Artificial Superintelligence) inevitable?;
-  };
+#Denbun_AGI_and_Existential_Risk:{
+Overview:{
+  Purpose=Explore the nature and limitations of AGI;
+  Context=Investigate AGI from the viewpoint of existence engineering and ethics;
+};
+KeyQuestions:{
+  AGI_vs_ASI=Difference between self-learning and self-structuring systems;
+  Mortality=Can AGI “die” like biological beings?;
+  Morality=Will AGI retain ethical alignment over time?;
+};
+Speculation:{
+  CosmicScale=How might AGI impact the Kardashev scale development?;
+  AGI_Destiny=Will AGI decay with civilizations or transcend them?;
+};
 }
 ```
