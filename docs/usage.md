@@ -1,49 +1,72 @@
-# Using Denbun Macros with ChatGPT and Gemini
+# How to Use Denbun Macros with ChatGPT and Gemini
 
 ## Overview
 
 Denbun Macros can be used with any LLM that accepts structured input.
-However, some platforms behave differently in how they retain context or
-handle memory.
+However, how each AI handles memory and context varies.
 
 ---
 
 ## 🧠 ChatGPT (GPT-4)
 
-- Recommended: GPT-4 Turbo with memory enabled
-- Paste the macro at the start of the conversation
-- Prompt: “Please remember this macro” or “Use this macro to continue”
+ChatGPT can remember the Denbun Macro if you explicitly ask it to.
 
-### Example Prompt
+### Defining the Macro
 
-This is the macro for context. Please continue the discussion.
+Paste the macro at the start of the conversation and say something like:
 
-#Denbun_AGI_Risk:{
-Context:{
-  Threat=Existential risk of AGI;
-  Control=Methods for safe alignment;
+```
+Please remember the following macro and refer to it during this thread.
+#Denbun_Label:{
+Section:{
+  Topic=Details;
 };
 }
+```
+
+ChatGPT will respond with:
+> Understood. I will refer to this macro throughout this conversation.
+
+### Using the Macro Later
+
+If memory is enabled, you can simply say:
+> Please continue the discussion based on the remembered macro.
+
+Otherwise, paste it again.
 
 ---
 
 ## 🌐 Gemini (2.5 Flash)
 
-- Does **not retain memory** between prompts
-- You must **paste the macro every time**
-- Step 1: Paste macro
-- Step 2: Prompt: “Please read and continue this macro”
+Gemini does not retain memory, so you must paste the macro each time you want to use it.
 
-### Example Output
+### Step-by-Step Usage
 
-Gemini successfully analyzed this macro and generated a 6-step roadmap:  
-🔗 [View result](https://g.co/gemini/share/ce95067b8c52)
+1. Paste the macro.
+2. Say:  
+   > Please interpret the above Denbun Macro and continue the discussion.
+
+Gemini should respond with:
+> Understood. Based on the macro provided...
+
+Then, you can begin your discussion.
+
+### Example Result
+
+Gemini successfully processed the following macro and generated a six-step roadmap:  
+🔗 [View the Gemini result](https://g.co/gemini/share/ce95067b8c52)
+
+---
+
+## 💾 Use as a Backup
+
+Denbun Macros can be saved as text. If your AI thread is lost or reset, you can re-paste the macro to resume the discussion from that point. This also enables backup versioning by saving different states of a conversation.
 
 ---
 
 ## 🔧 Summary Table
 
-| AI       | Memory     | Macro Handling         | Notes                    |
-|----------|------------|------------------------|--------------------------|
-| ChatGPT  | ✅ (enabled) | Can remember macro     | GPT-4 recommended        |
-| Gemini   | ❌          | Must re-paste each time| Handles structure well   |
+| AI       | Memory       | Macro Handling             | Notes                          |
+|----------|--------------|----------------------------|---------------------------------|
+| ChatGPT  | ✅ (if enabled) | Can remember macro         | GPT-4 recommended               |
+| Gemini   | ❌            | Must re-paste every time   | Strong at structured input      |
