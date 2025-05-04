@@ -48,6 +48,19 @@ And follow it with:
 - "Summarize the macro"
 - "Analyze and expand on each section"
 
+### ⚠️ Notes for Using with Different AIs
+
+- **ChatGPT** (GPT-4):
+  - Paste the macro at the start of the thread or into memory.
+  - You may need to instruct: *“Remember this macro for future use.”*
+
+- **Gemini** (2.5 Flash tested):
+  - Since Gemini does not retain memory, you must paste the macro **in full each time** before prompting.
+  - First paste the macro, then instruct: *“Please read and continue this macro.”*
+
+For full example:  
+[Gemini shared result](https://g.co/gemini/share/ce95067b8c52)
+  
 ---
 
 ## 🌱 Can Anyone Use Denbun Macro?
