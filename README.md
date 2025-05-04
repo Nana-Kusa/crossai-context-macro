@@ -120,7 +120,12 @@ As of May 2025, we have confirmed that **Gemini 2.5 Flash** is able to interpret
 ✅ This validation was conducted using the macro in [examples/AGI_discussion.ja.md](./examples/AGI_discussion.ja.md).
 
 🔗 The full conversation with Gemini is available here:  
-[https://g.co/gemini/share/ce95067b8c52](https://g.co/gemini/share/ce95067b8c52)
+[https://g.co/gemini/share/ce95067b8c52](https://g.co/gemini/share/ce95067b8c52)  
+
+🧠 Furthermore, follow-up tests in May 2025 indicate that Gemini 2.5 Flash may retain contextual understanding of previously defined Denbun Macros — even without persistent memory — as long as macro structure and intent are clearly stated.
+
+This behavior suggests that Gemini internally recognizes the macro as a reusable structure and can resume discussions from prior threads.
+
 
 ---
 ## 📖 Glossary
