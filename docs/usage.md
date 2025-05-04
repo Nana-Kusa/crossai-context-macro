@@ -69,4 +69,7 @@ Denbun Macros can be saved as text. If your AI thread is lost or reset, you can 
 | AI       | Memory       | Macro Handling             | Notes                          |
 |----------|--------------|----------------------------|---------------------------------|
 | ChatGPT  | ✅ (if enabled) | Can remember macro         | GPT-4 recommended               |
-| Gemini   | ❌            | Must re-paste every time   | Strong at structured input      |
+| Gemini   | ❌            | Must re-paste every time   | Strong at structured input      |  
+
+---
+👉 For a cross-AI comparison of Denbun Macro behavior, see [docs/compatibility.md](./compatibility.md).
