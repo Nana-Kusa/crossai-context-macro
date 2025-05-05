@@ -50,7 +50,7 @@ Gemini はこのマクロを正しく解析し、6ステップのロードマッ
 🔗 [Geminiの出力を見る](https://g.co/gemini/share/ce95067b8c52)
 
 上のスレッドでGeminiと対話を続けた後にGeminiに対話の伝文マクロ作成を依頼し、できた伝文マクロを新スレッドに貼ってGeminiが理解した様子です。  
-👉 Geminiとの対話は [こちらの共有リンク](https://g.co/gemini/share/ce95067b8c52) または [docs/gemini_agidiscussion.ja.md](./gemini_agidiscussion.ja.md) をご覧ください。
+👉 Geminiとの対話は [こちらの共有リンク](https://g.co/gemini/share/7bdd9904118c) または [docs/gemini_agidiscussion.ja.md](./gemini_agidiscussion.ja.md) をご覧ください。
 
 
 ---
