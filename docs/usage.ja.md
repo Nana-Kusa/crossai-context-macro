@@ -47,7 +47,10 @@
 ### 出力例
 
 Gemini はこのマクロを正しく解析し、6ステップのロードマップを生成しました：  
-🔗 [出力例を見る](https://g.co/gemini/share/ce95067b8c52)
+🔗 [Geminiの出力を見る](https://g.co/gemini/share/ce95067b8c52)
+
+上のスレッドでGeminiと対話を続けた後にGeminiに対話の伝文マクロ作成を依頼し、できた伝文マクロを新スレッドに貼ってGeminiが理解した様子です。  
+🔗 [Geminiの出力を見る](https://g.co/gemini/share/7bdd9904118c)
 
 ---
 
