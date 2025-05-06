@@ -73,4 +73,4 @@ I would like to define the following data structure as a "Denbun Macro". This st
 | AI       | Memory Support     | Macro Handling                  | Notes                                                 |
 |----------|--------------------|----------------------------------|-------------------------------------------------------|
 | ChatGPT  | ✅ (if enabled)     | Can remember macro               | GPT-4 Turbo recommended                               |
-| Gemini   | ✅ (enabled by default) | Recognizes and memorizes macros | Paste macro per thread for reliability and clarity    |
+| Gemini   | ✅ (2.5 or later) | Recognizes and memorizes macros | Paste macro per thread for reliability and clarity    |
