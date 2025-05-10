@@ -6,7 +6,7 @@ English version available: [README.md](./README.md)
 ## 概要
 **伝文マクロ** は、人間とAIの両方が読解可能な構造で議論履歴を記録する「伝文マクロ」形式です。  
 ChatGPT、Gemini、Claude など複数のAI間で文脈や履歴を共有し、議論の継続・検証を可能にすることを目指しています。  
-現状ではchatGPT4 TURBO以上のバージョンのみ使用できます。
+現状ではchatGPT plus以上のプランを契約している方が利用できるchatGPT-4 TURBO以上のバージョンのみ使用できます。
 
 ## 利用目的
 - 異なるAI間で議論の文脈を共有・再利用する
