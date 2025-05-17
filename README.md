@@ -77,8 +77,8 @@ You can also paste this data structure (Denbun Macro) into other threads with pr
 
 Once you’ve defined the Denbun Macro, you can always back up a thread by prompting "Save this thread as a Denbun Macro."  
 [Example 1: AGI discussion Denbun Macro](./examples/AGI_discussion.md)  
-[Example 2: CAN Invader defense discussion Denbun Macro](./examples/canbus_security.md)  
-[Example 3: Comparing answers from ChatGPT, Gemini, and Claude (Fact Check Example)](./examples/factcheck_example.md)  
+[Example 2: CAN Invader defense discussion Denbun Macro](./examples/canbus_security.ja.md)  
+[Example 3: Comparing answers from ChatGPT, Gemini, and Claude (Fact Check Example)](./examples/factcheck_example.ja.md)  
 
 Even if a thread is interrupted due to hallucination or other issues, as long as you save the Macro, you can reproduce the discussion in a new thread.
 
