@@ -1,151 +1,124 @@
-# crossai-context-macro  
+# Denbun Macro
 
 Japanese version available: [README.ja.md](./README.ja.md)
 
-
 ## Overview
-`crossai-context-macro` is an open-source format and methodology for managing structured conversation memory across multiple AI systems.
+**Denbun Macro** is a format for recording discussion histories in a structure that is readable by both humans and AIs.  
+It aims to enable the sharing and continuation of context and history across multiple AIs, such as ChatGPT, Gemini, and Claude.  
+Currently, this method works reliably only on ChatGPT-4 Turbo and higher versions, which are available to ChatGPT Plus subscribers.
 
-It uses a concept called a **Denbun Macro**, a human-readable, AI-interpretable block of structured text that summarizes a thread and enables:
-- Context preservation across sessions and platforms
-- Fact-checking across multiple AIs
-- Restarting stopped threads using backups
-- Thread branching, nesting, and resuming discussions at any point
+## Purpose
+- Share and reuse discussion context across different AIs
+- Facilitate fact-checking and multi-perspective comparison
+- Evaluate and enhance the context understanding capability of large language models (LLMs)
+- Serve as a manual backup when a thread is interrupted  
+  For ChatGPT: if you register a Denbun Macro in memory, you can easily back up the conversation with the prompt: "Save the conversation so far as a Denbun Macro."
+- Users can store versioned backups of Denbun Macros, making it easy to resume discussions from any past point  
+  Since Denbun Macros are simple text, backup is easy and, even if an AI hallucinates, restoration is possible
+- Between ChatGPT threads, you can move context across threads and even across different ChatGPT versions
 
----
+## Directory Structure
+- `format_spec/` : Templates in Markdown / JSON / YAML
+- `examples/` : Real-world Denbun Macro examples
+- `LICENSE` : License info (MIT)
 
-## 🧠 Purpose
+## How to Start Using Denbun Macro in ChatGPT
+At the beginning of a new thread, enter the following structure to define Denbun Macros for ChatGPT (nested layers are supported):
 
-Many AI models (e.g., Gemini, Claude, Perplexity) do not retain memory. Even in ChatGPT, conversations are bound to single threads unless memory is explicitly referenced. Denbun Macro solves this by making the context **portable**.
-
----
-
-## ✅ Benefits
-
-- Structure thread content explicitly
-- Switch between AI platforms while preserving context
-- Perform fact-checking by comparing macro interpretations
-- Rewind discussions from previous points if they go off-track
-
----
-
-## 🧰 How to Use with ChatGPT
-
-Paste a macro like this into your prompt:
-
-~~~
-#Denbun_Label:{
-Section:{
-  Topic1=Summary;
-  Topic2=Details;
-};
-}
-~~~
-
-And follow it with:
-
-- "Please continue this thread"
-- "Summarize the macro"
-- "Analyze and expand on each section"
-
-### ⚠️ Notes for Using with Different AIs
-📘 For detailed usage instructions with ChatGPT and Gemini, see  
-→ [docs/usage.md](./docs/usage.md)
-
-
-- **ChatGPT** (GPT-4):
-  - Paste the macro at the start of the thread or into memory.
-  - You may need to instruct: *“Remember this macro for future use.”*
-
-- **Gemini** (2.5 Flash tested):
-  - Since Gemini does not retain memory, you must paste the macro **in full each time** before prompting.
-  - First paste the macro, then instruct: *“Please read and continue this macro.”*
-
-For full example:  
-[Gemini shared result](https://g.co/gemini/share/ce95067b8c52)
-  
----
-
-## 🌱 Can Anyone Use Denbun Macro?
-
-Yes. Anyone using ChatGPT (especially GPT-4) can use Denbun Macro formatting.  
-
-When you want to save a ChatGPT conversation using Denbun Macro for the first time, use the following prompt:  
-~~~
-We define the following data structure as "Denbun Macro." Using this Denbun Macro, please summarize the content of this thread in the Denbun Macro format.
-
-#Denbun_Label:{
-  Section:{
-    Topic1=Summary;
-    Topic2=Details;
+~~~markdown
+#Denbun_LABEL:{
+  SectionName:{
+    Point1=Content;
+    Point2=Content;
   };
 }
-~~~  
-Even if a thread ends or resets, pasting the saved macro will restore it.
+~~~
 
-Note: GPT-3.5 may struggle with complex structures. GPT-4 is recommended.
+You **must** input this at the start of a new thread.  
+ChatGPT refers to such threads as “definition threads”.
 
----
+### ⚠️ Differences in Usage Across AIs
+📘 For detailed usage in ChatGPT and Gemini:  
+→ [docs/usage.md](./docs/usage.md)
 
-## 🧬 Thread Tree Structure
+- **ChatGPT (GPT-4)**
+  - Paste the Denbun Macro at the start or into memory
+  - Optionally, instruct "Please save this Denbun Macro into memory"
 
-You can build parent-child thread structures easily using Denbun Macros.
+- **Gemini (tested with 2.5 Flash)**
+  - The fastest method is to register the Denbun Macro in “Information you requested Gemini to save” under “Settings & Help.”
+  - For details, refer to the above link.
 
-1. Keep the main topic in the parent thread.
-2. Save a Denbun Macro in the parent thread when you want to branch out.
-3. Start a new thread with the macro — this becomes the child thread.
-4. When the child finishes, create a macro summarizing it and paste it back into the parent.
+Example of use:  
+[Gemini Output Example (Shared Link)](https://g.co/gemini/share/ce95067b8c52)
 
-You can make:
-- Multiple child threads
-- Grandchild threads
-- Great-grandchild threads, and more
+## Who Can Use Denbun Macro?
 
----
+Anyone using ChatGPT (especially GPT-4 Turbo) can use Denbun Macro by pasting it into prompts.
 
-## 📂 Example
+If you’ve already registered the Denbun Macro definition in ChatGPT memory, you can prompt like this to summarize the conversation:
 
-- [Example: AGI and Existential Risks](./examples/AGI_discussion.md)
+~~~markdown
+Summarize this thread as a Denbun Macro.
+~~~
 
----
+It’s that simple!
 
-## 🚀 Cross-AI Compatibility Confirmed
+For backup purposes, just copy the outputted Denbun Macro to a text editor and continue your interaction as usual.
 
-As of May 2025, we have confirmed that **Gemini 2.5 Flash** is able to interpret and utilize Denbun Macros correctly. It successfully:
+If ChatGPT hallucinates and the thread becomes unusable, start a new thread, paste the backed-up Denbun Macro, and prompt “I want to continue this topic,” and the conversation can resume from where it left off.  
+To check ChatGPT’s understanding, prompt, “Show me what you understand from this Denbun Macro.”  
 
-- Parsed the macro’s hierarchical structure
-- Produced a human-readable summary
-- Generated a six-step roadmap for ongoing discussion
+You can also paste this data structure (Denbun Macro) into other threads with prompts like:
 
-✅ This validation was conducted using the macro in [examples/AGI_discussion.ja.md](./examples/AGI_discussion.ja.md).
+- "Continue this Denbun Macro"
+- "Extract only the main points"
+- "Organize another topic in this structure"
 
-🔗 The full conversation with Gemini is available here:  
-[https://g.co/gemini/share/ce95067b8c52](https://g.co/gemini/share/ce95067b8c52)  
+Once you’ve defined the Denbun Macro, you can always back up a thread by prompting "Save this thread as a Denbun Macro."  
+[Example 1: AGI discussion Denbun Macro](./examples/AGI_discussion.md)  
+[Example 2: CAN Invader defense discussion Denbun Macro](./examples/canbus_security.md)  
+[Example 3: Comparing answers from ChatGPT, Gemini, and Claude (Fact Check Example)](./examples/factcheck_example.md)  
 
-🧠 Furthermore, follow-up tests in May 2025 indicate that Gemini 2.5 Flash may retain contextual understanding of previously defined Denbun Macros — even without persistent memory — as long as macro structure and intent are clearly stated.
+Even if a thread is interrupted due to hallucination or other issues, as long as you save the Macro, you can reproduce the discussion in a new thread.
 
-This behavior suggests that Gemini internally recognizes the macro as a reusable structure and can resume discussions from prior threads.
+### Creating Parent-Child Thread Structure is Simple
 
+1. In the parent thread, focus only on the main topic.
+2. When a subtopic arises, request a Denbun Macro summarizing the discussion so far.
+3. In the child thread, start by pasting the Denbun Macro and continue the discussion.
+4. When finished, generate a Denbun Macro summarizing the child thread and paste it back into the parent thread.
 
----
-## 📖 Glossary
+This allows you to clearly connect parent and child threads using Denbun Macros.
 
-| Term | Meaning |
-|------|---------|
-| Denbun | Short for "Denbun Macro", a structured context memory format |
-| Macro | A reusable block of instruction or context |
-| CrossAI | Using multiple AIs in one workflow |
+- You can create as many child threads as needed.
+- Grandchild and further nested threads are also possible.
 
----
+## Future Goal: Compatibility with Other AIs
+In the future, the goal is for Denbun Macros to enable resuming past threads and inheriting context simply by pasting them at the start of prompts on Gemini, Claude, and other AI chatbots.  
+If realized, this will make cross-AI discussion and fact-checking much easier.
 
-## 🔓 License
+## 🚀 Progress in Cross-AI Support
 
-MIT License (See LICENSE file)
+As of May 2025, **Gemini 2.5 Flash** has been confirmed to correctly interpret and utilize Denbun Macros. Verified abilities include:
 
----
+- Accurate parsing of Denbun Macro structure
+- Summarizing content for human readers
+- Providing step-by-step roadmaps aligned with discussion points
 
-## 🤝 Contribution
+Example Denbun Macro used:  
+📄 [examples/AGI_discussion.md](./examples/AGI_discussion.md)
 
-Issues and PRs welcome! See:
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Contributing Guide](./CONTRIBUTING.md)
+Check actual Gemini output here:  
+🌐 [Gemini 2.5 Flash Output Example (Shared Link)](https://g.co/gemini/share/ce95067b8c52)
+
+This confirms the **CrossAI** concept works in practice.
+
+🧠 Further testing in May 2025 showed that Gemini 2.5 Flash can read and write Denbun Macros to its internal memory, enabling structured discussions to resume across sessions.
+
+⚠ Note: Gemini sometimes replies "Saved," but this may not always mean truly persistent memory across sessions.
+For certainty, register Denbun Macros in “Information you requested Gemini to save” under "Settings & Help." (Added May 15, 2025)
+
+## Contribution & License
+This project is free to use, modify, and redistribute.  
+License: MIT License
