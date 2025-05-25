@@ -28,7 +28,6 @@ This is the macro for context. Please continue the discussion.
 ## 🧠 Gemini (2.5 Flash)
 
 * **Memory is enabled by default for signed-in users**, and Gemini 2.5 Flash has explicitly confirmed that it memorizes the Denbun Macro structure.
-* Despite this, **pasting the macro at the start of each new thread is still recommended** to ensure consistent interpretation.
 * **Step 1:** Paste the macro
 * **Step 2:** Prompt: “Please read and continue this macro”
 
@@ -40,6 +39,13 @@ This is the macro for context. Please continue the discussion.
 ✅ This confirms that **Gemini 2.5 Flash** recognizes and memorizes the macro format and can apply it in subsequent interactions.
 
 🔗 Example: [View 6-step roadmap generated from macro](https://g.co/gemini/share/ce95067b8c52)
+
+---
+
+## Claude4
+
+* Choice setting > Profile
+* Paste the Denbun Macro into the field: "What personal preferences should Claude consider in responses?"
 
 ---
 
