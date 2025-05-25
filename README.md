@@ -49,6 +49,10 @@ ChatGPT refers to such threads as “definition threads”.
   - The fastest method is to register the Denbun Macro in “Information you requested Gemini to save” under “Settings & Help.”
   - For details, refer to the above link.
 
+- **Claude4**
+  - The fastest method is to register the Denbun Macro in “What personal preferences should Claude consider in responses?” under “Settings > Profile.”
+  - For details, refer to the above link.
+
 Example of use:  
 [Gemini Output Example (Shared Link)](https://g.co/gemini/share/ce95067b8c52)
 
