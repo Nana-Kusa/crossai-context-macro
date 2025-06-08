@@ -1,4 +1,4 @@
-# 伝文マクロ  
+# 伝文マクロ  （人間に分かりやすい構造v1.0.3）
 
 English version available: [README.md](./README.md)
   
