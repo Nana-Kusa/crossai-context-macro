@@ -1,4 +1,4 @@
-# 伝文マクロ  
+# 伝文マクロ  （少しAI寄り構造のv1.1）
 
 English version available: [README.md](./README.md)
   
