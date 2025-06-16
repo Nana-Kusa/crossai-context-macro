@@ -87,6 +87,11 @@ In summary, structured prompts maximize AI potential and form a foundational app
 * **Cross-Platform Compatibility**
   Structured prompts improve portability across AI systems. Transformation rules can preserve logical structure while optimizing per model.
 
+## Documentation
+
+See [spec/overview.md](spec/overview.md) for an overview of the macro structures.
+
+
 ## Contribution & License
 
 This project is open for use, modification, and redistribution under the following license:
